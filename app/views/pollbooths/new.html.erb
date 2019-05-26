@@ -3,4 +3,9 @@
 
 <%= render 'form', pollbooth: @pollbooth %>
 
+
+<%= pie_chart Pollbooth.group(:answer).count %>
+<br>
+
+<%= bar_chart Pollbooth.group(:answer).count %>
 </div>
