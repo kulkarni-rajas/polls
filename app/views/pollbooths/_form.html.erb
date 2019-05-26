@@ -1,3 +1,4 @@
+<div class=container>
 <%= form_with(model: pollbooth, local: true) do |form| %>
   <% if pollbooth.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +12,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :email %>
     <%= form.text_field :email %>
   </div>
-
-  <div class="field">
+<br>
+  <div class="form-group">
     <%= form.label :answer %>
-    <%= form.text_field :answer %>
+    <%= form.select :answer,['Option 1', 'Option 2', 'Option 3', 'Option 4'] %>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
+<br>
+  <div class="form-group">
+    <%= form.submit value="Vote!!" %>
   </div>
+ 
 <% end %>
+</div>
