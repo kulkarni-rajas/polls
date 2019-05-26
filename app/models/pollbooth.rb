@@ -1,0 +1,2 @@
+class Pollbooth < ApplicationRecord
+end

@@ -1,0 +1,27 @@
+<%= form_with(model: pollbooth, local: true) do |form| %>
+  <% if pollbooth.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pollbooth.errors.count, "error") %> prohibited this pollbooth from being saved:</h2>
+
+      <ul>
+      <% pollbooth.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :answer %>
+    <%= form.text_field :answer %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
