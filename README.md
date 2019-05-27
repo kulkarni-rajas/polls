@@ -13,21 +13,21 @@
         > https://rubyinstaller.org/downloads/
 
  * Install Rails (Rails version 5.2.3)
-    > Check the link here
-    > https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm
+    * > Check the link here
+    * > https://www.tutorialspoint.com/ruby-on-rails/rails-installation.htm
 
  * Installing PostGresql
     > Check the link here
-    > For Linux
+    * For Linux
         > https://tecadmin.net/install-postgresql-server-on-ubuntu/
-    > For Windows
+    * For Windows
         > https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#windows
 
  * Make Sure there exists a Database by the name **polls_development**
 
 * Clone the Repository
-    > git clone https://github.com/kulkarni-rajas/Polls
-    > cd Polls
+    * > git clone https://github.com/kulkarni-rajas/Polls
+    * > cd Polls
 
 * Build on Server
     > rails s
