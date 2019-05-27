@@ -1,6 +1,6 @@
 # README
 
-## * Steps to Build this project on your machine
+## Steps to Build this project on your machine
 
  * Make a Directory
     > mkdir project
