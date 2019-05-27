@@ -1,15 +1,18 @@
-<p id="notice"><%= notice %></p>
-
-<p>
+<div class="container">
+<h1>Vote registered Succesfully</h1>
+<br>
+<h4>
   <strong>Email:</strong>
   <%= @pollbooth.email %>
-</p>
-
-<p>
+</h4>
+<br>
+<h4>
   <strong>Answer:</strong>
   <%= @pollbooth.answer %>
-</p>
-
-<%= link_to 'Edit', edit_pollbooth_path(@pollbooth) %> |
-<%= link_to 'New Pollbooth', new_pollbooth_path %>
-
+</h4>
+<br>
+<div class="form-group">
+<%= link_to '<button type="button">Edit Response</button>'.html_safe, edit_pollbooth_path(@pollbooth) %> |
+<%= link_to '<button type="button">Cast another vote</button>'.html_safe, new_pollbooth_path %>
+</div>
+</div>
