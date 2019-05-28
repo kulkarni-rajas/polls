@@ -29,6 +29,9 @@
     * > git clone https://github.com/kulkarni-rajas/Polls
     * > cd Polls
 
+* Make Migration
+    * > rake db:migrate
+
 * Build on Server
     > rails s
 
